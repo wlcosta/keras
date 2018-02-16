@@ -9,7 +9,7 @@ It gets to 75% validation accuracy in 10 epochs,
 and 79% after 15 epochs, and 83% after 30 epcohs.
 In my test, highest validation accuracy is 83.79% after 50 epcohs.
 
-This is a fast Implement, just 20s/epcoh with a gtx 1070 gpu.
+This is a fast Implement, just 20s/epoch with a gtx 1070 gpu.
 """
 
 from __future__ import print_function
@@ -24,7 +24,7 @@ from keras.preprocessing.image import ImageDataGenerator
 
 
 # the squashing function.
-# we use 0.5 in stead of 1 in hinton's paper.
+# we use 0.5 instead of 1 in hinton's paper.
 # if 1, the norm of vector will be zoomed out.
 # if 0.5, the norm will be zoomed in while original norm is less than 0.5
 # and be zoomed out while original norm is greater than 0.5.
